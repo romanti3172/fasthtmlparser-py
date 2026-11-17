@@ -1,0 +1,40 @@
+[build-system]
+requires = ["maturin>=1.9,<2"]
+build-backend = "maturin"
+
+[project]
+name = "fasthtmlparser"
+version = "0.1.0"
+description = "Fast HTML / XML parser for scraping with XPath 1.0 and CSS selectors, in Rust. A port of z3l.FastHtmlParser."
+readme = "README.md"
+license-files = ["LICENSE.md"]
+requires-python = ">=3.10"
+authors = [{ name = "z3l" }]
+keywords = ["html", "parser", "xpath", "css", "selectors", "scraping", "web-scraping", "rust"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: Other/Proprietary License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Rust",
+    "Topic :: Internet :: WWW/HTTP :: Indexing/Search",
+    "Topic :: Text Processing :: Markup :: HTML",
+    "Topic :: Text Processing :: Markup :: XML",
+    "Typing :: Typed",
+]
+
+[project.urls]
+Homepage = "https://github.com/romanti3172/fasthtmlparser-py"
+Source = "https://github.com/romanti3172/fasthtmlparser-py"
+Issues = "https://github.com/romanti3172/fasthtmlparser-py/issues"
+"Rust crate" = "https://crates.io/crates/fasthtmlparser"
+
+[tool.maturin]
+python-source = "python"
+module-name = "fasthtmlparser._fasthtmlparser"
+features = ["pyo3/extension-module"]
+exclude = [{ path = "testdata/**/*", format = "sdist" }, { path = "bench/**/*", format = "sdist" }]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
