@@ -3,6 +3,8 @@
 [![CI](https://github.com/romanti3172/fasthtmlparser-py/actions/workflows/ci.yml/badge.svg)](https://github.com/romanti3172/fasthtmlparser-py/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/fasthtmlparser.svg)](https://pypi.org/project/fasthtmlparser/)
 
+**Website:** [fasthtmlparser.com](https://fasthtmlparser.com): try the parser on any page, documentation and every language.
+
 A fast HTML / XML parser for scraping, with **XPath 1.0** and **CSS selectors**: Python bindings of the
 [Rust port](https://github.com/romanti3172/fasthtmlparser-rs) of
 [z3l.FastHtmlParser](https://github.com/romanti3172/z3l.FastHtmlParser). It is built for extracting data, not for
