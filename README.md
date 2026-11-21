@@ -85,7 +85,7 @@ tree construction (no implied `<tbody>` or `<html>`), and documents are read-onl
 
 ## Same results as the .NET version
 
-`tests/test_conformance.py` runs the conformance data of the Rust crate through the Python package: on 117 pages
+`tests/test_conformance.py` runs the conformance data of the Rust crate through the Python package: on 121 pages
 (fixtures, broken markup, cut-off pages, CR LF, 600-deep nesting, ...) every tag's name, position, text, text with line
 breaks, attributes, navigation and links, and 569 XPath / CSS queries on the document and from three tags of each
 page, must give exactly what z3l.FastHtmlParser (.NET) gives. So the bindings are checked as well as the parser.
