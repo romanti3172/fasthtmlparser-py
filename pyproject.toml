@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "fasthtmlparser"
-version = "0.1.3"
+version = "0.1.4"
 description = "Fast HTML / XML parser for scraping with XPath 1.0 and CSS selectors, in Rust. A port of z3l.FastHtmlParser."
 readme = "README.md"
 license = "LicenseRef-z3l-FastHtmlParser"

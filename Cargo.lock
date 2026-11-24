@@ -4,16 +4,16 @@ version = 4
 
 [[package]]
 name = "fasthtmlparser"
-version = "0.1.3"
+version = "0.1.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ea710fb913347a13edeb7f1c7e3cb3e01c2ad7522a1524f5d983796bc63ebc18"
+checksum = "37995942aba3255b2b2b93e17482f3813d5789459c36379b94ebd415a2e15e11"
 dependencies = [
  "memchr",
 ]
 
 [[package]]
 name = "fasthtmlparser-py"
-version = "0.1.3"
+version = "0.1.4"
 dependencies = [
  "fasthtmlparser",
  "pyo3",
